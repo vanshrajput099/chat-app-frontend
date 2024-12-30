@@ -9,4 +9,5 @@ export const secBackgroundColor = "#27272A";
 export const accentColor = "#FAFAFA";
 export const buttonTextColor = "#333335";
 export const lightText = "#B0B0B0";
-export const backendUrl = "http://localhost:4000/api/v1"
+export const backendUrl = "https://chat-app-backend-bo1l.onrender.com/api/v1";
+//export const backendUrl = "http://localhost:4000/api/v1"
