@@ -1,0 +1,28 @@
+/* Apply Tailwind's utility classes to custom scrollbar styles */
+@layer utilities {
+    .custom-scrollbar {
+      @apply overflow-auto;  /* Ensures scrollbars appear when content overflows */
+    }
+  
+    /* Style for the vertical and horizontal scrollbar */
+    .custom-scrollbar::-webkit-scrollbar {
+      @apply w-2;  /* Custom width for the scrollbar */
+      height: 8px; /* Custom height for horizontal scrollbar */
+    }
+  
+    /* Style for the scrollbar track */
+    .custom-scrollbar::-webkit-scrollbar-track {
+      @apply bg-gray-200 rounded-md;  /* Light gray background with rounded corners */
+    }
+  
+    /* Style for the scrollbar thumb (draggable part) */
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      @apply bg-gray-600 rounded-md;  /* Dark thumb with rounded corners */
+    }
+  
+    /* Style for thumb hover effect */
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      @apply bg-gray-800;  /* Darker thumb when hovered */
+    }
+  }
+  

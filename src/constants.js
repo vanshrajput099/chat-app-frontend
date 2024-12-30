@@ -1,0 +1,12 @@
+export const backgroundColor = "#09090B";
+export const surfaceCardColor = "#09090B";
+export const primaryText = "#FAFAFA";
+export const secText = "#EEEEEE";
+export const inputBG = "transparent";
+export const inputText = "#E0E0E0";
+export const border = "#27272A";
+export const secBackgroundColor = "#27272A";
+export const accentColor = "#FAFAFA";
+export const buttonTextColor = "#333335";
+export const lightText = "#B0B0B0";
+export const backendUrl = "http://localhost:4000/api/v1"
