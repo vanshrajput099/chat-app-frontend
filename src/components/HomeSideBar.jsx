@@ -18,7 +18,7 @@ const HomeSideBar = () => {
             dispatch(changeCheckingSideUsers(true));
             const res = await getAllSideBarUsers();
             dispatch(setSideUsers(res.data.data));
-            dispatch(changeCheckingSideUsers());
+            dispatch(changeCheckingSideUsers(false));
         }
         getSideUsers();
     }, [])
