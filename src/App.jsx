@@ -35,7 +35,7 @@ const App = () => {
 
   useEffect(() => {
     if (store.authUser && !store.socket) {
-      const backend = "http://localhost:4000/";
+      const backend = "https://chat-app-backend-bo1l.onrender.com/";
       const socket = io(backend, {
         withCredentials: true,
         query: {
