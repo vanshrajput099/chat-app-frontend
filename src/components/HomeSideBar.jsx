@@ -17,8 +17,9 @@ const HomeSideBar = () => {
         const getSideUsers = async () => {
             dispatch(changeCheckingSideUsers(true));
             const res = await getAllSideBarUsers();
+            console.log(res)
             dispatch(setSideUsers(res.data.data));
-            dispatch(changeCheckingSideUsers(false));
+            dispatch(changeCheckingSideUsers(false));W
         }
         getSideUsers();
     }, [])

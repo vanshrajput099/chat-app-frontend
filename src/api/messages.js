@@ -4,8 +4,10 @@ import { backendUrl } from "../constants";
 export const getAllSideBarUsers = async () => {
     try {
         const res = await axios.get(backendUrl + "/messages/users", { withCredentials: true });
+        console.log(res)
         return res;
     } catch (error) {
+        console.log(error)
         return error;
     }
 }
