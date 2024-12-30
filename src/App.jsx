@@ -90,6 +90,7 @@ const App = () => {
         <Route path="/login" element={store.authUser ? <Navigate to="/" /> : <Login />} />
         <Route path="/profile" element={store.authUser ? <Profile /> : <Navigate to="/login" />} />
         <Route path="/token-resend" element={store.authUser ? <Navigate to="/" /> : <TokenResend />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </div>
   );
